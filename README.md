@@ -1,0 +1,115 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Maahi ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Comic Sans MS', 'Segoe UI', cursive;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+      color: #fff;
+    }.card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  max-width: 420px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+h1 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 15px;
+  margin: 15px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.yes {
+  background: #ff4d6d;
+  color: #fff;
+}
+
+.no {
+  background: #6c757d;
+  color: #fff;
+}
+
+.hidden {
+  display: none;
+}
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div id="question">
+      <h1> Maahi 💖</h1>
+      <p>Will you be my Bayko for this and every Valentines?</p>
+      <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHJ5bW94bXJkNXJqNXo3Z2xwdzZod2Y5b3Z0N2p5M2N1MW9pMW9lZCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/3oriO0OEd9QIDdllqo/giphy.gif" alt="Cute gif" /><div class="buttons">
+    <button class="yes" onclick="sayYes()">Yes 💕</button>
+    <button class="no" onclick="sayNo()">No 🙈</button>
+  </div>
+</div>
+
+<div id="yesAnswer" class="hidden">
+  <h1>Yayyy!!! mi tujha vr khupp khupp prem krtho 🥰🫂🦢🌹</h1>
+  <p>You just made me the happiest person ever i love you majhe maahii ❤️</p>
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExZTR1cDJ5bHh6bTZpN2RzN2h3d3E3bTQ3dnhkdnZqNW1yNmV0aCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/l4FGpP4lxGGgK5CBW/giphy.gif" alt="Happy gif" />
+  <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExb3R0M2R0eWVtbDV3bG1xYzJ2dHJ1ZXF5c3E0aHZoZ3J5dGRzZyZlcD12MV9naWZzX3NlYXJjaCZjdD1n/26FLdmIp6wJr91JAI/giphy.gif" alt="Ring gif" />
+</div>
+
+<div id="noAnswer" class="hidden">
+  <h1>Oh no 😢</h1>
+  <p>It's okay… I'll still like you a lot 💔</p>
+</div>
+
+  </div>  <script>
+    function sayYes() {
+      document.getElementById('question').classList.add('hidden');
+      document.getElementById('yesAnswer').classList.remove('hidden');
+    }
+
+    function sayNo() {
+      document.getElementById('question').classList.add('hidden');
+      document.getElementById('noAnswer').classList.remove('hidden');
+    }
+  </script></body>
+</html>
