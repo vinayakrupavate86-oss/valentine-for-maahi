@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Valentine Maahi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="pocket">
+    <div class="letter">
+      Valentine Maahi ❤️
+    </div>
+  </div>
+
+</body>
+</html>
+     body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #ffe6ea;
+}
+
+/* Envelope pocket */
+.pocket {
+  position: relative;
+  width: 0;
+  height: 0;
+
+  border-left: 148px solid #f5a3a2;
+  border-right: 148px solid #f5a3a2;
+  border-top: 90px solid transparent;
+
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+/* Letter inside pocket */
+.letter {
+  position: absolute;
+  bottom: -10px;
+  left: -110px;
+
+  width: 220px;
+  height: 140px;
+  background: #fff;
+
+  border-radius: 6px;
+  padding: 12px;
+
+  font-family: "Dancing Script", cursive;
+  font-size: 22px;
+  text-align: center;
+} 
